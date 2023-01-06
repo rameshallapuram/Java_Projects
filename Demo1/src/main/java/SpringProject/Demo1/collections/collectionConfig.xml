@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+	
+	<bean class="SpringProject.Demo1.collections.Emp" name="emp1">
+		<property name="name" value="Caren"/>
+		<property name="addresses">
+			<list>
+			<value>Goa</value>
+			<value>Mumbai</value>
+			<value>Dubai</value>
+			</list>
+		</property>	
+		
+		<property name="phones">
+			<set>
+				<value>854322317</value>
+				<value>953728329</value>
+			</set>
+		</property>
+		
+		<property name="courses">
+			<map>
+				<entry key="Java" value="2 months"/>
+				<entry key="Python" value="1.5 months" />
+				<entry key="C++" value="3 months" />
+			</map>
+		</property>
+		
+		<property name="props">
+			<props>
+				<prop key="Web and Cloud">High Scale</prop>
+				<prop key="Machine Learning">Automation</prop>
+				<prop key="Embedded Systems">Hardware</prop>
+			</props>
+		</property>
+		
+	</bean>
+	
+	
+	
+	
+</beans>
